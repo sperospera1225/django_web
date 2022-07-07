@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="{% url 'confirm' %}", method="post">
+      {% csrf_token %}
+      {{ form }}
+      <button type="submit">제출</button>
+    </form>
+</body>
+</html>
