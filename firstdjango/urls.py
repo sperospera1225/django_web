@@ -21,6 +21,7 @@ from first import views
 urlpatterns = [
     path('first/', include('first.urls')), # view 파일의 index 메소드에 연결
     path('second/', include('second.urls')),
+    path('third/', include('third.urls')),
     path('admin/', admin.site.urls),
     ]
 '''
